@@ -11,6 +11,27 @@ html {
 body {
   background-color: #f2f2f2;
   color: #333;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+.columns {
+  display: flex;
+}
+
+.columns div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.columns p {
+  flex-grow: 1;
+}
+
+img {
+  width: 100%;
+  display: block;
 }
 
 .title {
@@ -19,11 +40,11 @@ body {
   text-align: center;
 }
 
-h1 {
+h2 {
   font-size: 2rem;
 }
 
-h2 {
+h3 {
   font-size: 1rem;
 }
 
@@ -50,9 +71,15 @@ cite {
   background-color: #333;
 }
 
-.books {
-  display: flex;
-  justify-content: center;
+.btn:hover {
+  text-decoration: none;
+  background-color: #333;
+}
+
+.btn-small {
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
 }
 
 .anderon {
@@ -78,7 +105,7 @@ cite {
   border-color: #333;
   display: flex;
   flex-direction: column;
-  background-color: #e2e2e2;
+  background-color: #ccc;
   padding: .75rem;
   margin: 0;
 }
@@ -92,7 +119,7 @@ cite {
   border-color: #333;
   display: flex;
   flex-direction: column;
-  background-color: #e2e2e2;
+  background-color: #aaa;
   padding: .75rem;
   margin: 0;
 }
@@ -106,7 +133,7 @@ cite {
   border-color: #333;
   display: flex;
   flex-direction: column;
-  background-color: #e2e2e2;
+  background-color: #999;
   padding: .75rem;
   margin: 0;
 }
